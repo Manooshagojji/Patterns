@@ -40,3 +40,56 @@ op
 *	*	*	
 *	*	
 *
+----------------------------------
+class Main {
+    public static void main(String[] args) {
+        int n=5;
+        int nsp=n-1;
+        int nst=1;
+        int row=1;
+        while(row<=n){
+            for(int i=0;i<nsp;i++){
+            System.out.print("\t");
+            }
+            for(int i=0;i<nst;i++){
+            System.out.print("*\t");
+            }
+            row++;
+            nsp--;
+            nst++;
+            System.out.println();
+        }
+        
+        
+    }
+}
+				*	
+			*	*	
+		*	*	*	
+	*	*	*	*	
+*	*	*	*	*	
+------------------------------------------
+class Main {
+    public static void main(String[] args) {
+        int n=5;
+        int nsp=0;
+        int nst=n;
+        int row=1;
+        while(row<=n){
+            for(int i=1;i<=nsp;i++){
+            System.out.print("\t");
+            }
+            for(int i=1;i<=nst;i++){
+            System.out.print("*\t");
+            }
+            row++;
+            nsp++;
+            nst--;
+            System.out.println();
+        }
+*	*	*	*	*	
+	*	*	*	*	
+		*	*	*	
+			*	*	
+				*	
+
