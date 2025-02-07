@@ -18,3 +18,25 @@ class Main {
 *	*	*	
 *	*	*	*	
 *	*	*	*	*	
+-----------------------------------------------------
+class Main {
+    public static void main(String[] args) {
+        int n=5;
+        int row=n;
+        while(row>0){
+            int star=1;
+            while(star<=row){
+                System.out.print("*\t");
+                star++;
+                }
+            row--;
+             System.out.println();
+        }
+    }
+}
+op
+*	*	*	*	*	
+*	*	*	*	
+*	*	*	
+*	*	
+*
